@@ -14,6 +14,7 @@ app.get("/", (req,res) =>{
 });
 //seperating routers
 app.use("/api/users",require("./routes/userRoutes"));
+app.use("/api/quiz",require("./routes/quizRoutes"));
 
 //server start
 const PORT = process.env.PORT || 5000;
