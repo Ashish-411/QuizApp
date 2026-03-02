@@ -1,10 +1,7 @@
-import api from "../utils/api";
-import { useState,useEffect, useRef } from "react";
+import {useEffect, useRef } from "react";
 import Hero from "../components/Hero";
 import HomeMain from "../components/HomeMain";
 function Home(){
-    const [questions,setQuestions] = useState(null);
-    const [loading,setLoading] = useState(false);
     const dotsRef = useRef(null);
 
     // Generate floating dots
@@ -33,21 +30,6 @@ function Home(){
             if (container) container.innerHTML = '';
         };
     }, []);
-    async function fetchInGameQuiz(){
-        try{
-            setLoading(true);
-            const res = await api.get("api/quiz/ingame");
-            console.log(res.data);
-        }catch(err){
-            console.log(err);
-            setLoading(false);
-        }finally{
-            setLoading(false);
-        }
-    }
-    useEffect(()=>{
-        fetchInGameQuiz();
-    },[]);
     return (
         <div className="relative min-h-screen bg-bg overflow-hidden">
 

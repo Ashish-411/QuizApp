@@ -19,7 +19,7 @@ function HomeMain() {
                 <div className="text-[2.4rem] leading-none">🎮</div>
                 <div className="text-left">
                     <div className="text-[1.3rem] font-extrabold tracking-wide">Play Game</div>
-                    <div className="text-[0.75rem] font-semibold opacity-70 mt-[-2px]">Jump into a quiz now</div>
+                    <div className="text-[0.75rem] font-semibold opacity-70 mt-[-2px]">Play Pre_Loaded Quiz</div>
                 </div>
             </button>
 
