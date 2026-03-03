@@ -41,7 +41,7 @@ const quizSchema = new mongoose.Schema({
 },
 {timestamps: true});
 quizSchema.pre("save", async function() {
-    if (this.id) return next();
+    if (this.id) return ;
 
     const lastQuiz = await mongoose.model("Quiz")
         .findOne()
