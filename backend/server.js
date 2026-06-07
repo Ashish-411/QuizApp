@@ -8,7 +8,7 @@ const app = express();
 
 //enable cors
 app.use(cors({
-    origin:["http://localhost:5173","https://quiz-bliz-3mjl.vercel.app/"],
+    origin:["http://localhost:5173","https://quiz-bliz-3mjl.vercel.app"],
     credentials: true,
 }));
 app.use(express.json());
