@@ -1,7 +1,7 @@
 import { useAuth } from "../contexts/AuthContext";
 function Hero(){
     const {user} = useAuth();
-    const name = user?.username;
+    const name = user?.username || "Guest";
     function getGreeting(){
         const Greetings = ["Morning", "AfterNoon", "Evening", "Night"];
         const currentHr = new Date().getHours();
