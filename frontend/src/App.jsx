@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import InGameQuiz from "./pages/InGameQuiz";
 import Login from "./pages/Login";
 import ProtectedRoute from "./components/ProtectedRoute";
-import CreateQuiz from "./pages/createQuiz";
+import CreateQuiz from "./pages/CreateQuiz";
 import MyQuizzes from "./pages/MyQuizzes";
 import CustomQuiz from "./pages/CustomQuiz";
 import CustomQuestionView from "./pages/CustomQuestionView";
